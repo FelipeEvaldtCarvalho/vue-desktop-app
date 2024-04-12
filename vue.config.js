@@ -1,4 +1,15 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+  configureWebpack: (config) => {
+    config.externals = {
+      "better-sqlite3": "commonjs better-sqlite3",
+    };
+  },
+  transpileDependencies: true,
+  pluginOptions: {
+    electronBuilder: {
+      preload: "src/preload.js",
+      externals: ["better-sqlite3"],
+    },
+  },
+});
