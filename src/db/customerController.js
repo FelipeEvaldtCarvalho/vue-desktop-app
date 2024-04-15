@@ -31,7 +31,7 @@ export const criarCliente = (cliente) => {
   );
 };
 
-export const buscarClientes = () => {
+export const getAllCustomers = () => {
   const stmt = database.prepare(`SELECT * FROM customers`);
   return stmt.all();
 };

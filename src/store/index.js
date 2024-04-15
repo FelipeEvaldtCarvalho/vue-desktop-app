@@ -1,14 +1,6 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
+import customers from "./modules/customers/index.js";
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+  modules: { customers },
+});

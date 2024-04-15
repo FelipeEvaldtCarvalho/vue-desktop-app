@@ -1,6 +1,9 @@
 <template>
   <SideMenu />
   <div class="content">
+    <span style="color: red; position: absolute; top: 0px; left: 15px">
+      {{ $route.fullPath }}
+    </span>
     <router-view />
   </div>
 </template>

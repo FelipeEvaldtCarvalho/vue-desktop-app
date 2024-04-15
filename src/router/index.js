@@ -16,7 +16,6 @@ const routes = [
   },
   {
     path: "/customer",
-    name: "customer-view",
     component: CustomerView,
     meta: {
       menuTitle: "Clientes ",
@@ -26,10 +25,12 @@ const routes = [
       {
         path: "",
         component: CustomerList,
+        name: "customer-home",
       },
       {
-        path: "form",
+        path: "create",
         component: CustomerForm,
+        name: "customer-form",
       },
     ],
   },

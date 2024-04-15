@@ -1,7 +1,7 @@
 import { contextBridge } from "electron";
 import {
   criarCliente,
-  buscarClientes,
+  getAllCustomers,
   buscarClientePorId,
   atualizarCliente,
   deletarCliente,
@@ -10,7 +10,7 @@ import {
 contextBridge.exposeInMainWorld("electron", {
   customer: {
     criarCliente,
-    buscarClientes,
+    getAllCustomers,
     buscarClientePorId,
     atualizarCliente,
     deletarCliente,
