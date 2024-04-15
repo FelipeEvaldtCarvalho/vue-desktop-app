@@ -1,9 +1,9 @@
 <template>
-  <div>HOMEZADA</div>
+  <div>customer form</div>
 </template>
 
 <script>
 export default {
-  name: "HomeView",
+  name: "CustomerForm",
 };
 </script>

@@ -11,5 +11,6 @@ module.exports = defineConfig({
       preload: "src/preload.js",
       externals: ["better-sqlite3"],
     },
+    vuetify: {},
   },
 });
